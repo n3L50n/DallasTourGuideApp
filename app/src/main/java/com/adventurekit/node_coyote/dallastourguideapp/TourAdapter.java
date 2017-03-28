@@ -10,17 +10,17 @@ import android.support.v4.app.FragmentPagerAdapter;
 
 public class TourAdapter extends FragmentPagerAdapter {
 
-    public TourAdapter(FragmentManager fm){
+    public TourAdapter(FragmentManager fm) {
         super(fm);
     }
 
     @Override
-    public Fragment getItem(int position){
-        if (position == 0){
+    public Fragment getItem(int position) {
+        if (position == 0) {
             return new FoodFragment();
-        } else if (position == 1){
+        } else if (position == 1) {
             return new ArtFragment();
-        } else if (position == 2){
+        } else if (position == 2) {
             return new CultureFragment();
         } else {
             return new OutdoorsFragment();
@@ -28,22 +28,22 @@ public class TourAdapter extends FragmentPagerAdapter {
     }
 
     @Override
-    public int getCount(){
+    public int getCount() {
         return 4;
     }
 
     @Override
     public CharSequence getPageTitle(int position) {
-        switch (position){
-            case 0: 
+        switch (position) {
+            case 0:
                 return "FOOD";
-            case 1: 
+            case 1:
                 return "ART";
             case 2:
                 return "CULTURE";
             case 3:
                 return "OUTDOORS";
         }
-        return null; 
+        return "What";
     }
 }

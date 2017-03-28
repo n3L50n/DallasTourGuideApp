@@ -1,5 +1,6 @@
 package com.adventurekit.node_coyote.dallastourguideapp;
 
+import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -23,5 +24,8 @@ public class MainActivity extends AppCompatActivity {
         mTourAdapter = new TourAdapter(getSupportFragmentManager());
 
         mViewPager.setAdapter(mTourAdapter);
+
+        TabLayout tabLayout = (TabLayout) findViewById(R.id.sliding_tabs);
+        tabLayout.setupWithViewPager(mViewPager);
     }
 }
