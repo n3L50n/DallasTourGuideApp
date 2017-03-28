@@ -1,9 +1,46 @@
 <resources>
     <string name="app_name">DallasTourGuideApp</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-
     <string name="lfh_title">Little Forest Hills</string>
     <string name="lfh_description">A place it\'s great I promise</string>
+    
+    <!--Food Titles, Descriptions, and Content Descriptions-->
+    <string name="truckyard_title">Truckyard</string>
+    <string name="truckyard_desc">Truckyard is an eclectic gathering of food trucks and vintage chairs and tables</string>
+    <string name="truckyard_image_content">Image of 3 people at the Truckyard</string>
+    <string name="flying_saucer_title">Flying Saucer</string>
+    <string name="flying_saucer_desc">The walls and ceiling of this place are covered with personalized plates of those who have tried a minimum of 300 different beers at Flying Saucer</string>
+    <string name="flying_saucer_image_content">Image of 3 people at Flying Saucer</string>
+    <string name="kellers_title">Keller\'s Drive-In</string>
+    <string name="kellers_desc">Keller\'s is a classic Texas experience. Beers, burgers, and shakes delivered to your vehicle as you admire the culture of cars, trucks, and motorcycles.</string>
+    <string name="kellers_image_content">Image of Texans with motorcycles in a parking lot</string>
+    
+    <!--Art Titles, Descriptions, and Content Descriptions-->
+    <string name="beach_house_title">Music</string>
+    <string name="beach_house_desc">Music is an integral part of Dallas culture. Dallas is famous for being a stop for bands and musicians travelling across the States. This has lead to a great turn out in Dallas for just about any band hoping to make a tour through America. Bands always seem to have a good time with Dallas crowds as they are often full and lively.</string>
+    <string name="beach_house_image_content">Image of the band Beach House performing</string>
+    <string name="museum_title">Museums</string>
+    <string name="museum_desc">Dallas has it\'s fair share of museums to offer</string>
+    <string name="museum_image_content">Image of TTTTTTTTTTTTT</string>
+    <string name="arch_title">Architecture</string>
+    <string name="arch_desc">Architecture of downtown Dallas is famous for </string>
+    <string name="arch_image_content">an image of </string>
+    <string name="de_title">Deep Ellum</string>
+    <string name="de_desc">To truly experience the Art world of Dallas, and a great piece of what Texas has to offer, Deep Ellum is a must visit.</string>
+
+    <!--Culture Titles, Descriptions, and Content Descriptions-->
+    <string name="matt_title">Backyard Culture</string>
+    <string name="matt_desc">Backyard BBQ\'s, firepits, parties, and hangouts are such a common part of Dallas culture it would be surprising to live in Dallas for one year and not be invited to one.</string>
+    <string name="matt_image_content">Image of Matt in a backyard</string>
+    <string name="kj_title">Company Celebrations</string>
+    <string name="kj_desc">It is common in Dallas for companies to celebrate milestones by throwing parties for employees. Often the parties are family friendly and include musical guests, face painting, and balloon makers.</string>
+    <string name="kj_image_content">Katie kissing her mother, both with face make up</string>
+    <string name="rock_title">Rock Climbing</string>
+    <string name="rock_desc">Rock climbing is a very popular aspect of Dallas culture. Members of Team Texas travel great distances to practice and compete together. It is also commonly used for team building and for couples going on dates.</string>
+
+    <!--Outdoors Titles, Descriptions, and Content Descriptions-->
+    <string name="wrl_title">White Rock Lake</string>
+    <string name="wrl_desc">White Rock Lake has a two way paved trail open to pedestrians, longboarders, roller skaters, and bicyclists.</string>
+    <string name="wrl_image_content">Image of a bicycle by a tree at White Rock Lake</string>
+    
 </resources>
