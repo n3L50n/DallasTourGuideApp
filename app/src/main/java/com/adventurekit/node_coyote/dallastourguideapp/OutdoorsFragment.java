@@ -24,6 +24,8 @@ public class OutdoorsFragment extends Fragment {
         // Build Outdoor category data into Cardview
         final ArrayList<TourLocation> items = new ArrayList<TourLocation>();
         items.add(new TourLocation(R.string.wrl_title, R.string.wrl_desc));
+        items.add(new TourLocation(R.string.preserve_title, R.string.preserve_desc));
+        items.add(new TourLocation(R.string.texoma_title, R.string.texoma_desc));
 
         // Adapt the data to the CardView
         TourLocationAdapter adapter = new TourLocationAdapter(getActivity(), items, R.color.outdoors_background_color);

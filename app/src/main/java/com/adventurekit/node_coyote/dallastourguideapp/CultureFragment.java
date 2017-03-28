@@ -25,6 +25,7 @@ public class CultureFragment extends Fragment {
         ArrayList<TourLocation> items = new ArrayList<TourLocation>();
         items.add(new TourLocation(R.string.matt_title, R.string.matt_desc));
         items.add(new TourLocation(R.string.rock_title, R.string.rock_desc));
+        items.add(new TourLocation(R.string.kj_title, R.string.kj_desc));
 
         // Adapt data to cardView
         TourLocationAdapter adapter = new TourLocationAdapter(getActivity(), items, R.color.culture_background_color);
