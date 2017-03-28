@@ -5,7 +5,10 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
 import android.widget.TextView;
+
+import java.util.ArrayList;
 
 /**
  * Created by node_coyote on 3/27/17.
@@ -30,7 +33,18 @@ public class FoodFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
 
-        return inflater.inflate(R.layout.fragment_food, container, false);
+        View rootView =  inflater.inflate(R.layout.fragment_food, container, false);
+
+        final ArrayList<TourLocation> items = new ArrayList<TourLocation>();
+        items.add(new TourLocation(R.string.lfh_title, R.string.lfh_description));
+
+        TourLocationAdapter adapter = new TourLocationAdapter(getActivity(), items, R.color.food_background_color);
+
+        ListView listView = (ListView) rootView.findViewById(R.id.list);
+
+        listView.setAdapter(adapter);
+
+        return rootView;
     }
 
 }

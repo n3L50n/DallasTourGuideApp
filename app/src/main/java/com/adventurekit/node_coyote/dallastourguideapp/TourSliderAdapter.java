@@ -8,9 +8,9 @@ import android.support.v4.app.FragmentPagerAdapter;
  * Created by node_coyote on 3/27/17.
  */
 
-public class TourAdapter extends FragmentPagerAdapter {
+public class TourSliderAdapter extends FragmentPagerAdapter {
 
-    public TourAdapter(FragmentManager fm) {
+    public TourSliderAdapter(FragmentManager fm) {
         super(fm);
     }
 

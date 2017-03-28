@@ -8,7 +8,7 @@ import android.os.Bundle;
 public class MainActivity extends AppCompatActivity {
 
     // Adapter Member variables
-    TourAdapter mTourAdapter;
+    TourSliderAdapter mTourSliderAdapter;
     ViewPager mViewPager;
 
     @Override
@@ -21,9 +21,9 @@ public class MainActivity extends AppCompatActivity {
         mViewPager = (ViewPager) findViewById(R.id.main_view_pager);
 
         //Create adapter to display correct fragment
-        mTourAdapter = new TourAdapter(getSupportFragmentManager());
+        mTourSliderAdapter = new TourSliderAdapter(getSupportFragmentManager());
 
-        mViewPager.setAdapter(mTourAdapter);
+        mViewPager.setAdapter(mTourSliderAdapter);
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.sliding_tabs);
         tabLayout.setupWithViewPager(mViewPager);
