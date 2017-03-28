@@ -16,14 +16,18 @@ public class TourSliderAdapter extends FragmentPagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-        if (position == 0) {
-            return new FoodFragment();
-        } else if (position == 1) {
-            return new ArtFragment();
-        } else if (position == 2) {
-            return new CultureFragment();
-        } else {
-            return new OutdoorsFragment();
+
+        switch (position){
+            case 0:
+                return new FoodFragment();
+            case 1:
+                return new CultureFragment();
+            case 2:
+                return new ArtFragment();
+            case 3:
+                return new OutdoorsFragment();
+            default:
+                return new FoodFragment();
         }
     }
 
@@ -38,9 +42,9 @@ public class TourSliderAdapter extends FragmentPagerAdapter {
             case 0:
                 return "FOOD";
             case 1:
-                return "ART";
-            case 2:
                 return "CULTURE";
+            case 2:
+                return "ART";
             case 3:
                 return "OUTDOORS";
         }

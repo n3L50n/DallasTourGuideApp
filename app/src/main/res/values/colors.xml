@@ -5,4 +5,8 @@
     <color name="colorAccent">#FF4081</color>
 
     <color name="food_background_color">#FFFe0f</color>
+    <color name="culture_background_color">#947e0f</color>
+    <color name="art_background_color">#9472df</color>
+    <color name="outdoors_background_color">#347e0f</color>
+
 </resources>
