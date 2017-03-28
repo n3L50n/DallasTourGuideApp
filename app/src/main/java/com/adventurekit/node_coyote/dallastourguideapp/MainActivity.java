@@ -6,17 +6,22 @@ import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
 
+    // Adapter Member variables
+    TourAdapter mTourAdapter;
+    ViewPager mViewPager;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
 
         // Find View Pager to allow user to swipe between fragment views
-        ViewPager viewPager = (ViewPager) findViewById(R.id.main_view_pager);
+        mViewPager = (ViewPager) findViewById(R.id.main_view_pager);
 
         //Create adapter to display correct fragment
-        TourAdapter adapter = new TourAdapter(getSupportFragmentManager());
+        mTourAdapter = new TourAdapter(getSupportFragmentManager());
 
-        viewPager.setAdapter(adapter);
+        mViewPager.setAdapter(mTourAdapter);
     }
 }

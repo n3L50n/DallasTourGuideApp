@@ -2,13 +2,13 @@ package com.adventurekit.node_coyote.dallastourguideapp;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentStatePagerAdapter;
+import android.support.v4.app.FragmentPagerAdapter;
 
 /**
  * Created by node_coyote on 3/27/17.
  */
 
-public class TourAdapter extends FragmentStatePagerAdapter {
+public class TourAdapter extends FragmentPagerAdapter {
 
     public TourAdapter(FragmentManager fm){
         super(fm);
@@ -30,5 +30,20 @@ public class TourAdapter extends FragmentStatePagerAdapter {
     @Override
     public int getCount(){
         return 4;
+    }
+
+    @Override
+    public CharSequence getPageTitle(int position) {
+        switch (position){
+            case 0: 
+                return "FOOD";
+            case 1: 
+                return "ART";
+            case 2:
+                return "CULTURE";
+            case 3:
+                return "OUTDOORS";
+        }
+        return null; 
     }
 }
