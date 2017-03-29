@@ -34,11 +34,11 @@ public class FoodFragment extends Fragment {
 
         // Build out the TourLocation data object for the Food category
         final ArrayList<TourLocation> items = new ArrayList<TourLocation>();
-        items.add(new TourLocation(R.string.truckyard_title, R.string.truckyard_desc));
-        items.add(new TourLocation(R.string.flying_saucer_title, R.string.flying_saucer_desc));
-        items.add(new TourLocation(R.string.kellers_title, R.string.kellers_desc));
-        items.add(new TourLocation(R.string.uu_title, R.string.uu_desc));
-        items.add(new TourLocation(R.string.cad_title, R.string.cad_desc));
+        items.add(new TourLocation(R.string.truckyard_title, R.string.truckyard_desc, R.drawable.truckyard));
+        items.add(new TourLocation(R.string.flying_saucer_title, R.string.flying_saucer_desc, R.drawable.sauce));
+        items.add(new TourLocation(R.string.kellers_title, R.string.kellers_desc, R.drawable.keller));
+        items.add(new TourLocation(R.string.uu_title, R.string.uu_desc, R.drawable.lot));
+        items.add(new TourLocation(R.string.cad_title, R.string.cad_desc, R.drawable.rustic));
 
         // Adapt the data to the CardView
         TourLocationAdapter adapter = new TourLocationAdapter(getActivity(), items, R.color.food_background_color);

@@ -23,11 +23,11 @@ public class ArtFragment extends Fragment {
 
         // Populate with data from Art category
         ArrayList<TourLocation> items = new ArrayList<TourLocation>();
-        items.add(new TourLocation(R.string.beach_house_title, R.string.beach_house_desc));
-        items.add(new TourLocation(R.string.museum_title, R.string.museum_desc));
+        items.add(new TourLocation(R.string.beach_house_title, R.string.beach_house_desc, R.drawable.beach_house));
+        items.add(new TourLocation(R.string.museum_title, R.string.museum_desc, R.drawable.museum));
         items.add(new TourLocation(R.string.de_title, R.string.de_desc));
-        items.add(new TourLocation(R.string.arch_title, R.string.arch_desc));
-        items.add(new TourLocation(R.string.mural_title, R.string.mural_desc));
+        items.add(new TourLocation(R.string.arch_title, R.string.arch_desc, R.drawable.tub));
+        items.add(new TourLocation(R.string.mural_title, R.string.mural_desc, R.drawable.mural));
 
         // Adapt Art data to CardView
         TourLocationAdapter adapter = new TourLocationAdapter(getActivity(), items, R.color.art_background_color);
