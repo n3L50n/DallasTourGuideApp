@@ -38,9 +38,20 @@ public class TourLocationAdapter extends ArrayAdapter<TourLocation> {
 
         TextView description = (TextView) listCard.findViewById(R.id.tour_location_description);
         description.setText(currentItem.getLocationDescription());
-//
-//        ImageView image = (ImageView) listCard.findViewById(R.id.tour_image);
-//        image.setBackground(currentItem.getLocationImage());
+
+        // Find the ImageView in the list_item.xml layout with the ID image.
+        ImageView image = (ImageView) listCard.findViewById(R.id.tour_image);
+
+        // Check if an image is provided for this word or not
+        if (currentItem.hasImage()) {
+            // If an image is available, display the provided image based on the resource ID
+            image.setImageResource(currentItem.getLocationImage());
+            // Make sure the view is visible
+            image.setVisibility(View.VISIBLE);
+        } else {
+            // Otherwise hide the ImageView (set visibility to GONE)
+            image.setVisibility(View.GONE);
+        }
 
         View cardContainer = listCard.findViewById(R.id.card_container);
         int color = ContextCompat.getColor(getContext(), mColorResource);
