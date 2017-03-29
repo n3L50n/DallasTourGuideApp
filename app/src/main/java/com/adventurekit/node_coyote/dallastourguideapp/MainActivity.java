@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         mViewPager = (ViewPager) findViewById(R.id.main_view_pager);
 
         //Create and apply adapter to display correct fragment
-        mTourSliderAdapter = new TourSliderAdapter(getSupportFragmentManager());
+        mTourSliderAdapter = new TourSliderAdapter(this, getSupportFragmentManager());
         mViewPager.setAdapter(mTourSliderAdapter);
 
         // Add Tabs to allow clear navigation

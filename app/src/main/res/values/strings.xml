@@ -1,6 +1,12 @@
 <resources>
     <string name="app_name">DallasTourGuideApp</string>
-    
+
+    <!--Tabs-->
+    <string name="food">FOOD</string>
+    <string name="culture">CULTURE</string>
+    <string name="art">ART</string>
+    <string name="outdoors">OUTDOORS</string>
+
     <!--Food Titles, Descriptions, and Content Descriptions-->
     <!--1 X-->
     <string name="truckyard_title">Truckyard</string>

@@ -1,5 +1,6 @@
 package com.adventurekit.node_coyote.dallastourguideapp;
 
+import android.content.Context;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -10,8 +11,11 @@ import android.support.v4.app.FragmentPagerAdapter;
 
 public class TourSliderAdapter extends FragmentPagerAdapter {
 
-    public TourSliderAdapter(FragmentManager fm) {
+    private Context mContext;
+
+    public TourSliderAdapter(Context context, FragmentManager fm) {
         super(fm);
+        mContext = context;
     }
 
     @Override
@@ -40,14 +44,14 @@ public class TourSliderAdapter extends FragmentPagerAdapter {
     public CharSequence getPageTitle(int position) {
         switch (position) {
             case 0:
-                return "FOOD";
+                return mContext.getString(R.string.food);
             case 1:
-                return "CULTURE";
+                return mContext.getString(R.string.culture);
             case 2:
-                return "ART";
+                return mContext.getString(R.string.art);
             case 3:
-                return "OUTDOORS";
+                return mContext.getString(R.string.culture);
         }
-        return "What";
+        return null;
     }
 }
