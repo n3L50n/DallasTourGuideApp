@@ -4,9 +4,9 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
-    <color name="food_background_color">#FFFe0f</color>
-    <color name="culture_background_color">#947e0f</color>
-    <color name="art_background_color">#9472df</color>
-    <color name="outdoors_background_color">#347e0f</color>
+    <color name="food_background_color">#E9E6E6</color>
+    <color name="culture_background_color">#E6E9E6</color>
+    <color name="art_background_color">#E6E6E9</color>
+    <color name="outdoors_background_color">#E6E9E9</color>
 
 </resources>

@@ -26,6 +26,8 @@ public class ArtFragment extends Fragment {
         items.add(new TourLocation(R.string.beach_house_title, R.string.beach_house_desc));
         items.add(new TourLocation(R.string.museum_title, R.string.museum_desc));
         items.add(new TourLocation(R.string.de_title, R.string.de_desc));
+        items.add(new TourLocation(R.string.arch_title, R.string.arch_desc));
+        items.add(new TourLocation(R.string.mural_title, R.string.mural_desc));
 
         // Adapt Art data to CardView
         TourLocationAdapter adapter = new TourLocationAdapter(getActivity(), items, R.color.art_background_color);

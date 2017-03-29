@@ -8,7 +8,10 @@ public class TourLocation {
 
     private int mLocationTitle;
     private int mLocationDescription;
-    private int mLocationImage;
+    private int mLocationImage = NO_IMAGE_PROVIDED;
+
+    /** Set if no image is provided */
+    private static final int NO_IMAGE_PROVIDED = -1;
 
     public TourLocation(int locationTitle, int locationDescripton){
 
@@ -33,5 +36,10 @@ public class TourLocation {
 
     public int getLocationImage(){
         return mLocationImage;
+    }
+
+    // Return an image or not
+    public boolean hasImage() {
+        return mLocationImage != NO_IMAGE_PROVIDED;
     }
 }

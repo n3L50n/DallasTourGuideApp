@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -37,6 +38,9 @@ public class TourLocationAdapter extends ArrayAdapter<TourLocation> {
 
         TextView description = (TextView) listCard.findViewById(R.id.tour_location_description);
         description.setText(currentItem.getLocationDescription());
+//
+//        ImageView image = (ImageView) listCard.findViewById(R.id.tour_image);
+//        image.setBackground(currentItem.getLocationImage());
 
         View cardContainer = listCard.findViewById(R.id.card_container);
         int color = ContextCompat.getColor(getContext(), mColorResource);
