@@ -20,11 +20,11 @@ public class MainActivity extends AppCompatActivity {
         // Find View Pager to allow user to swipe between fragment views
         mViewPager = (ViewPager) findViewById(R.id.main_view_pager);
 
-        //Create adapter to display correct fragment
+        //Create and apply adapter to display correct fragment
         mTourSliderAdapter = new TourSliderAdapter(getSupportFragmentManager());
-
         mViewPager.setAdapter(mTourSliderAdapter);
 
+        // Add Tabs to allow clear navigation
         TabLayout tabLayout = (TabLayout) findViewById(R.id.sliding_tabs);
         tabLayout.setupWithViewPager(mViewPager);
     }

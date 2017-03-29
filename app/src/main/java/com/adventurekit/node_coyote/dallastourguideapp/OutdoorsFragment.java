@@ -15,6 +15,13 @@ import java.util.ArrayList;
 
 public class OutdoorsFragment extends Fragment {
 
+    /**
+     * Populate Outdoors Fragment with Views and data
+     * @param inflater
+     * @param container
+     * @param savedInstanceState
+     * @return
+     */
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
 

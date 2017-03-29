@@ -13,6 +13,11 @@ public class TourLocation {
     /** Set if no image is provided */
     private static final int NO_IMAGE_PROVIDED = -1;
 
+    /**
+     * Constructor to provide Title and Description for a given Tour item
+     * @param locationTitle
+     * @param locationDescripton
+     */
     public TourLocation(int locationTitle, int locationDescripton){
 
         mLocationTitle = locationTitle;
@@ -20,6 +25,12 @@ public class TourLocation {
 
     }
 
+    /**
+     * Constructor to provide Title, Description, and Image for a given tour item
+     * @param locationTitle
+     * @param locationDescription
+     * @param locationImage
+     */
     public TourLocation(int locationTitle, int locationDescription, int locationImage){
         mLocationTitle = locationTitle;
         mLocationDescription = locationDescription;

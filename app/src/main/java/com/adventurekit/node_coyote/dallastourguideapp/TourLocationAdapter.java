@@ -31,11 +31,14 @@ public class TourLocationAdapter extends ArrayAdapter<TourLocation> {
             listCard = LayoutInflater.from(getContext()).inflate(R.layout.fragment_card_view, parent, false);
         }
 
+        // Create a Tour data object at the current position
         TourLocation currentItem = getItem(position);
 
+        // Set Card title
         TextView title = (TextView) listCard.findViewById(R.id.tour_location_title);
         title.setText(currentItem.getLocationTitle());
 
+        // Set Card description
         TextView description = (TextView) listCard.findViewById(R.id.tour_location_description);
         description.setText(currentItem.getLocationDescription());
 
@@ -44,7 +47,7 @@ public class TourLocationAdapter extends ArrayAdapter<TourLocation> {
 
         // Check if an image is provided for this word or not
         if (currentItem.hasImage()) {
-            // If an image is available, display the provided image based on the resource ID
+            // If an image is available, display the provided image
             image.setImageResource(currentItem.getLocationImage());
             // Make sure the view is visible
             image.setVisibility(View.VISIBLE);
@@ -53,6 +56,7 @@ public class TourLocationAdapter extends ArrayAdapter<TourLocation> {
             image.setVisibility(View.GONE);
         }
 
+        // Color backgrounds of cards
         View cardContainer = listCard.findViewById(R.id.card_container);
         int color = ContextCompat.getColor(getContext(), mColorResource);
         cardContainer.setBackgroundColor(color);

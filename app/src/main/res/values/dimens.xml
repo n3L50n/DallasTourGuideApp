@@ -3,5 +3,11 @@
 
     <dimen name="location_title_text_size">24sp</dimen>
     <dimen name="location_description_text_size">16sp</dimen>
+    <dimen name="title_padding">8dp</dimen>
+    <dimen name="desc_padding">8dp</dimen>
+    <dimen name="image_margin_bottom">16dp</dimen>
+    <dimen name="image_height">200dp</dimen>
+    <dimen name="card_view_corner_radius">8dp</dimen>
+    <dimen name="card_view_elevation">8dp</dimen>
 
 </resources>

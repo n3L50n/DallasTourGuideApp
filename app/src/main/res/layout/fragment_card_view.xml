@@ -7,9 +7,9 @@
     android:clickable="true"
     android:foreground="?android:attr/selectableItemBackground"
     android:orientation="vertical"
-    card_view:cardBackgroundColor="#E6E6E6"
-    card_view:cardCornerRadius="8dp"
-    card_view:cardElevation="8dp">
+    card_view:cardBackgroundColor="@color/card_view_background_color"
+    card_view:cardCornerRadius="@dimen/card_view_corner_radius"
+    card_view:cardElevation="@dimen/card_view_elevation">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -26,9 +26,7 @@
 
         <ImageView
             android:id="@+id/tour_image"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_marginBottom="16dp"/>
+            style="@style/LocationImageStyle"/>
 
     </LinearLayout>
 

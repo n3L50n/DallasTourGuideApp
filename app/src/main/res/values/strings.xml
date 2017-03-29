@@ -24,7 +24,7 @@
     <!--Art Titles, Descriptions, and Content Descriptions-->
     <!--1 X-->
     <string name="beach_house_title">Music</string>
-    <string name="beach_house_desc">Music is an integral part of Dallas culture. Dallas is famous for being a stop for bands and musicians travelling across the States. This has lead to a great turn out in Dallas for just about any band hoping to make a tour through America. Bands always seem to have a good time with Dallas crowds as they are often full and lively.</string>
+    <string name="beach_house_desc">Dallas is famous for being a stop for bands and musicians travelling across the States. This has lead to a great turn out in Dallas for just about any band hoping to make a tour through America. Bands always seem to have a good time with Dallas crowds as they are often full and lively.</string>
     <string name="beach_house_image_content">Image of the band Beach House performing</string>
     <!--2 X-->
     <string name="museum_title">Museums</string>
@@ -36,10 +36,10 @@
     <string name="arch_image_content">an illustration of a couple in a bathtub</string>
     <!--4 Y-->
     <string name="de_title">Deep Ellum</string>
-    <string name="de_desc">To truly experience the Art world of Dallas, and a great piece of what Texas has to offer, Deep Ellum is a must visit.</string>
+    <string name="de_desc">To truly experience the Art world of Dallas, and a great piece of what Texas has to offer, Deep Ellum is a must visit. It will be difficult to avoid this location for even a one weekend trip!</string>
     <!--5 Z-->
     <string name="mural_title">Murals</string>
-    <string name="mural_desc">Murals decorate many parts of downtown</string>
+    <string name="mural_desc">Murals decorate many parts of downtown. Be sure to stroll and have a look!</string>
 
     <!--Culture Titles, Descriptions, and Content Descriptions-->
     <!--1 X-->
